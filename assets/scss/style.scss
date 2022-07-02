@@ -1,0 +1,45 @@
+*{margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+
+$colorPrimario:  rgba(196, 196, 196, 0.821);
+$colorSecundario: rgb(123, 123, 123); 
+
+    .header_index{
+        width: 100%;
+        overflow: hidden;
+        background-image: url(../img/inicio.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+        
+               div img {
+                            width: 160px;
+                        }
+                h1{
+                        font-family: 'Cinzel', serif;
+                        font-size: 80px;
+                        color: rgb(215, 215, 215);
+                }
+    }
+    
+   main div{  
+        background-color: $colorPrimario;
+        ul{
+            list-style: none;
+            height: 300px;
+            width: 100%;
+            li a{
+                text-decoration: none;
+                color:black;
+                font-size: 50px;
+                font-family:'Italiana', serif ;
+             }
+        }
+
+   }
+
+    footer {
+        background-color: $colorSecundario;
+    }
