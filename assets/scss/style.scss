@@ -14,14 +14,18 @@ $colorSecundario: rgb(123, 123, 123);
         width: 100%;
         height: 550px;
         
-               div img {
-                            width: 160px;
-                        }
-                h1{
-                        font-family: 'Cinzel', serif;
-                        font-size: 80px;
-                        color: rgb(215, 215, 215);
+               div {
+                        animation-name: moverLogoPrincipal;
+                        animation-duration: 3s;
+                        @keyframes moverLogoPrincipal{
+                            0%{transform: translate(0px,-300px)}}
+                    img {width: 160px;}
                 }
+                
+                
+                h1{font-family: 'Cinzel', serif;
+                         font-size: 80px;
+                        color: rgb(215, 215, 215);}
     }
     
    main div{  
@@ -30,12 +34,19 @@ $colorSecundario: rgb(123, 123, 123);
             list-style: none;
             height: 300px;
             width: 100%;
-            li a{
-                text-decoration: none;
-                color:black;
-                font-size: 50px;
-                font-family:'Italiana', serif ;
-             }
+            li { :hover {
+                transform: scale(1.2);
+                transition: all 2s;
+                }
+                a{
+                    text-decoration: none;
+                    color:black;
+                    font-size: 50px;
+                    font-family:'Italiana', serif ;
+                 }
+
+            }
+            
         }
 
    }
@@ -43,3 +54,4 @@ $colorSecundario: rgb(123, 123, 123);
     footer {
         background-color: $colorSecundario;
     }
+    

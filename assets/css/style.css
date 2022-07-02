@@ -12,6 +12,15 @@
   width: 100%;
   height: 550px;
 }
+.header_index div {
+  animation-name: moverLogoPrincipal;
+  animation-duration: 3s;
+}
+@keyframes moverLogoPrincipal {
+  0% {
+    transform: translate(0px, -300px);
+  }
+}
 .header_index div img {
   width: 160px;
 }
@@ -28,6 +37,10 @@ main div ul {
   list-style: none;
   height: 300px;
   width: 100%;
+}
+main div ul li :hover {
+  transform: scale(1.2);
+  transition: all 2s;
 }
 main div ul li a {
   text-decoration: none;
